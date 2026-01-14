@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+.boxUno {
+    display: flex;
+    flex-flow:row wrap;
+    height: 40vh;
+    width: 50vw;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    margin: 30vh auto;
+    border-radius: 0.50rem;
+}
+
+.boxUno .aleft {
+    margin:auto;
+
+}
+
+.boxUno .aright {
+    display: flex;
+    flex-flow: column wrap;
+    border-left: 2px solid #000;
+    margin: auto;
+    padding-left: 2rem;
+}
+
+.boxUno .aright {
+    flex-basis: 20vw;
+    font-weight: bold;
+}
+
+.boxUno .aright input {
+    padding: 0.20rem;
+    margin-top: 0.50rem;
+    width: none;
+
+}
+
+.btnEmviar {
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #f009;
+}
+
+.btnEmviar:hover {
+    background-color: #f00;
+    cursor: pointer;
+}
