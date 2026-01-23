@@ -1,6 +1,7 @@
 const usuario = document.getElementById('myuser');
 const contrasena = document.getElementById('mypss');
 const boton = document.getElementById('btnEmviar');
+const lbuser = document.getElementById('luser');
 
 const usuarioReal = "root";
 const contrasenaReal = "1234567";
@@ -22,6 +23,8 @@ boton.addEventListener('click', () => {
         }else if (userAlma === usuarioReal && contrasenaAlma === contrasenaReal){
             alert("Sesión iniciada de forma correcta")
             document.body.style.backgroundColor = "rgba(123, 255, 0, 1)"
+            lbuser.textContent = "Bienvenido :)"
+            intentos = 3;
             break;
         }else{
             intentos --;
